@@ -7,6 +7,7 @@ body, h1, h2, h3, p, ul, li, a, button {
 #khungchinh {
     width: 1200px;
     margin: auto;
+    background-color: rgb(21, 21, 212);
 }
 body {
     font-family: Arial, sans-serif;
@@ -185,20 +186,24 @@ footer {
     height: 400px; /* Chiều cao của vùng hiển thị sản phẩm */
     padding: 20px 0;
 }
-
 .product-list {
     display: flex; /* Hiển thị các sản phẩm theo chiều dọc */
     flex-direction: column; /* Sắp xếp các sản phẩm theo cột */
     gap: 20px; /* Khoảng cách giữa các sản phẩm */
 }
-
+.sanpham h2 {
+    margin: auto;
+    text-align: center;
+    background-color: #2b9e1c;
+}
 .product-item {
-    width: 200px; /* Chiều rộng của mỗi sản phẩm */
+    width: 1000px; /* Chiều rộng của mỗi sản phẩm */
     text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .product-item img {

@@ -10,7 +10,7 @@
     <section id="register">
         <div class="container">
             <h2>Đăng ký tài khoản</h2>
-            <form action="process_register.php" method="post" id="register-form">
+            <form action="dangnhap.html" method="post" id="register-form">
                 <label for="username">Tên đăng nhập:</label>
                 <input type="text" id="username" name="username" required>
 
@@ -23,28 +23,10 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type="submit">Đăng ký</button>
+                <button type=""><a href="dangnhap.html">Đăng ký</a></button>
             </form>
             <p>Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
         </div>
     </section>
-
-    <script>
-        const form = document.getElementById("register-form");
-
-        form.addEventListener("submit", function(event) {
-            const password = document.getElementById("password").value;
-            const confirmPassword = document.getElementById("confirm-password").value;
-
-            if (password !== confirmPassword) {
-                alert("Mật khẩu và xác nhận mật khẩu không khớp!");
-                event.preventDefault(); // Ngừng gửi form nếu mật khẩu không khớp
-            } else {
-                // Nếu form hợp lệ, chuyển hướng người dùng đến trang đăng nhập
-                header("Location: dangnhap.html");
-exit();
-            }
-        });
-    </script>
 </body>
 </html>
