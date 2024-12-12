@@ -1,1 +1,114 @@
-<h1>dien thong tin vao day</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://github.com/TrinhVietAnh86/BAITAPLON.git</title>
+    <link rel="stylesheet" href="trangchu.css">
+</head>
+<body>
+    <div id="khungchinh">
+    <header>
+        <div class="ten">
+            <h1>EAGLE Shop</h1>
+        </div>
+    </header>
+
+        <div class="hero">
+            <h2>Chào mừng bạn đến với EAGLE Shop!</h2>
+            <p>Hãy tìm sản phẩm yêu thích của bạn ngay hôm nay!</p>
+        </div>
+
+        <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="" >Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <form class="search-form" action="/search" method="get">
+            <input type="text" name="query" placeholder="Tìm kiếm sản phẩm..." required>
+            <button type="submit">Tìm</button>
+        </form>
+
+    <section class="products" class="container">
+        <div class="sanpham"><h2>Sản phẩm</h2></div>
+        <div class="product-slider">
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Sản phẩm 1">
+                    <h3>Sản phẩm 1</h3>
+                    <p>Giá: 500,000 VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Sản phẩm 2">
+                    <h3>Sản phẩm 2</h3>
+                    <p>Giá: 750,000 VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Sản phẩm 3">
+                    <h3>Sản phẩm 3</h3>
+                    <p>Giá: 1,000,000 VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="product4.jpg" alt="Sản phẩm 4">
+                    <h3>Sản phẩm 4</h3>
+                    <p>Giá: 650,000 VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="product5.jpg" alt="Sản phẩm 5">
+                    <h3>Sản phẩm 5</h3>
+                    <p>Giá: 800,000 VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <!-- Thêm nhiều sản phẩm nếu cần -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about" class="container">
+        <h2>Giới thiệu</h2>
+        <p>Chào mừng đến với EAGLE Shop – Cửa Hàng Công Nghệ Đỉnh Cao!<hr>
+            EAGLE Shop cung cấp các sản phẩm công nghệ hiện đại, chất lượng với giá cả hợp lý. Từ điện thoại thông minh, máy tính xách tay, đến phụ kiện công nghệ, chúng tôi cam kết mang đến cho bạn những sản phẩm tốt nhất.<br>
+            
+            Tại sao chọn EAGLE Shop?<br>
+            Chất lượng đảm bảo: Sản phẩm được chọn lọc kỹ càng từ các thương hiệu uy tín.<br>
+            Mua sắm dễ dàng: Giao diện thân thiện, hỗ trợ nhiều phương thức thanh toán.<br>
+            Giao hàng nhanh chóng: Cam kết giao hàng đúng hẹn, an toàn.<br>
+            Hỗ trợ khách hàng: Dịch vụ chăm sóc khách hàng 24/7.<br>
+            Hãy khám phá ngay EAGLE Shop để trải nghiệm mua sắm công nghệ tuyệt vời và nhận những ưu đãi hấp dẫn!
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Liên hệ</h2>
+        <form>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Lời nhắn:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shop Online. Shop đồ điện tử.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
