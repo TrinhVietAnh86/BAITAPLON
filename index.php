@@ -9,8 +9,8 @@
 <body>
     <div id="khungchinh">
         <?php include("pages/header.php")?>
-        
-        <?php include("pages/banner.php")?><?php include("pages/menu.php")?>
+        <?php include("pages/menu.php")?>
+        <?php include("pages/banner.php")?>
         <?php include("pages/sanpham.php")?>
         <?php include("pages/gioithieu.php")?>
 </div>
