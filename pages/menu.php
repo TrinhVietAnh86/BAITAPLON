@@ -6,6 +6,7 @@
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
                 <li><a href="#">giỏ hàng</a></li>
+                <li><a href="#">ĐĂNG NHẬP</a></li>
             </ul>
         </nav>
         </div>
