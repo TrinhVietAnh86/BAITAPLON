@@ -1,0 +1,52 @@
+<?php
+// Kết nối đến cơ sở dữ liệu
+include 'database.php';
+
+// Lấy thông tin sản phẩm (giả sử có 1 sản phẩm)
+$product = [
+    "name" => "Laptop ASUS TUF GAMING F15 ",
+    "price" => 19998000,
+    "original_price" => 21078000,
+    "rating" => 4.9,
+    "reviews" => 656,
+    "image" => "product-image.png",
+    "delivery" => "20/12 - 21/12",
+];
+?>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-header">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="./img/anh ltF15.jpg">
+            </div>
+            <!-- Thông tin sản phẩm -->
+            <div class="product-details">
+                <div class="product-title">
+                    <?php echo htmlspecialchars($product['name']); ?>
+                </div>
+                <div class="flash-sale">FLASH SALE</div>
+                <div class="price">
+                    ₫<?php echo number_format($product['price'], 0, ',', '.'); ?>
+                    <span class="original-price">₫<?php echo number_format($product['original_price'], 0, ',', '.'); ?></span>
+                </div>
+                <p>Đánh giá: ⭐ <?php echo $product['rating']; ?> | <?php echo $product['reviews']; ?> Đánh giá</p>
+                <p>✅ Giao hàng miễn phí từ <?php echo $product['delivery']; ?></p>
+                <div class="buttons">
+                    <button>Thêm Vào Giỏ Hàng</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
