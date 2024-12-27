@@ -309,10 +309,8 @@ footer {
     background-color: #555;
 }
 
-
-
 /* khung của bannner */
-body {
+.khungbn {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -324,23 +322,22 @@ body {
 .carousel {
     position: relative;
     width: 1200px;
-    height: 380px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-frame {
-    width: 100%;
-    height: 100%;
+.image-frame  {
     border: 5px solid #ddd;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    object-fit: cover;
 }
 
-.image {
+.khungbn img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -348,7 +345,7 @@ body {
 
 .carousel button {
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -358,19 +355,6 @@ body {
     padding: 10px;
     border-radius: 100%;
 }
-
-button:hover {
-    background-color: rgba(201, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 1px;
-}
-
 
 /* menu sản phẩm */
 
