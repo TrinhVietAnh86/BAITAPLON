@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="dangnhap.css">
+    <script>
+        function validateLogin(event) {
+            // Ngăn chặn hành động mặc định của form (chuyển trang)
+            event.preventDefault();
+
+            // Lấy giá trị từ các ô input
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Kiểm tra điều kiện
+            if (username === 'admin' && password === '123456') {
+                // Điều hướng sang trang chủ nếu hợp lệ
+                window.location.href = "../../../index.php";
+            } else {
+                // Hiển thị thông báo lỗi nếu không hợp lệ
+                alert('Tên đăng nhập hoặc mật khẩu không đúng!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <section id="login">
+        <div class="container">
+            <h2>Đăng nhập</h2>
+            <form>
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="../../index.php">Đăng nhập</button>
+            </form>
+            <p>Chưa có tài khoản? <a href="../dang-ki/dangki.html">Đăng ký ngay</a></p>
+        </div>
+    </section>
+</body>
+</html>
